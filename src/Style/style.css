@@ -1,0 +1,189 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: #f4f4f4;
+  }
+  
+  .modal-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+  }
+  
+  .modal {
+    width: 400px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+  }
+  
+  .modal-header {
+    background-color: #007bff;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .modal-close {
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .modal-body {
+    padding: 20px;
+    font-size: 16px;
+    color: #333;
+    height: 207px;
+    overflow: auto;
+  }
+  
+  .modal-footer {
+    padding: 10px 20px;
+    background-color: #f1f1f1;
+    text-align: right;
+  }
+  
+  .modal-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .modal-button:hover {
+    background-color: #0056b3;
+  }
+
+  .modal-body div {
+    margin-bottom: 15px;
+}
+
+.modal-body label {
+    flex: 1;
+    min-width: 150px; /* Adjust this width as needed */
+    margin-right: 10px;
+}
+
+.modal-body input,
+.modal-body textarea {
+    flex: 2;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    width: 100%;
+}
+
+.participants-div{
+  display: flex !important;
+  align-items: center !important;
+  gap: 6px;
+}
+
+.participants-div input{
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.participants-div .participants-button{
+  display: grid;
+  place-items: center;
+  height: 34px;
+  width: 34px;
+  border-radius: 50%;
+  color: white;
+  background-color: #007bff;
+  cursor: pointer;
+}
+
+.participants-button:active{
+  background-color: #022449 !important;
+}
+
+/* Customize the scrollbar's width and height */
+::-webkit-scrollbar {
+  width: 8px;  /* Increased width for better visibility */
+  height: 8px; /* Increased height for better visibility */
+}
+
+/* Style the scrollbar thumb */
+::-webkit-scrollbar-thumb {
+  background-color: #007bff; /* Correct property for color */
+  border-radius: 8px;        /* Rounded corners for the thumb */
+  border: 2px solid transparent; /* Optional: Adds space around the thumb */
+  background-clip: padding-box;  /* Ensures the border doesn't cover the thumb */
+}
+
+/* (Optional) Style the scrollbar track */
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1; /* Light background for the track */
+  border-radius: 8px;        /* Rounded corners for the track */
+}
+
+.delete-event{
+  display: grid;
+  place-items: center;
+  height: 34px;
+  width: 34px;
+  border-radius: 50%;
+  color: white;
+  background-color: #d43c3c;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+
+.delete-event:active{
+  background-color: #ff0000;
+}
+
+
+.ja-iccha{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  gap: 1rem;
+
+}
+
+.signup-btn{
+  border-radius: 10px;
+  padding: 6px 12px;
+  background-color: #007bff;
+  color: white;
+  transition: all 0.4s linear;
+  cursor: pointer;
+  outline: none;
+  border: none
+
+}
+
+.signup-btn:hover{
+  /* background-color: #007bff; */
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  scale: 1.1;
+}
+
+.signup-btn:active{
+  background-color: #022449;
+}
